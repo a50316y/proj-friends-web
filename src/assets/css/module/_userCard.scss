@@ -1,0 +1,97 @@
+.m {
+    &-card {
+        width: 208px;
+        height: 320px;
+        margin: 1rem;
+        // background-color: #fbfbfb;
+        // box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        // border-radius: 4px;
+        overflow: hidden;
+
+        &__body {
+            padding: 8px;
+
+            .box_userinfo_title {
+                display: flex;
+                justify-content: center;
+            }
+
+            .box_userinfo_intro {
+                width: 100%;
+                height: 60px;
+                font-size: 12px;
+                font-size: 12px;
+                line-height: 1.2;
+                position: relative;
+                margin: 6px 0 10px;
+                padding: 5px;
+                text-align: left;
+                color: #788086;
+                border: 1px solid #8ecfd3;
+                border-radius: 6px;
+                background: #fff;
+
+                p {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+            }
+
+            .btn-like {
+                background-color: #FFF;
+                color: #f06976;
+                border: 1px solid #f48d97;
+
+                &:hover {
+                    background-color: #f48d97;
+                    
+                    color: #FFF;
+                }
+            }
+            
+        }
+    }
+
+    &-img-container {
+        width: 100%;
+        @include flex(center);
+        cursor: pointer;
+        position: relative;
+
+
+        &:hover{
+            opacity: 0.7;
+        }
+
+        .m-image {
+            margin: 0 auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 3px rgba(120, 120, 120, .35);
+        }
+
+        // &:before {
+        //     content: '';
+        //     display: block;
+        //     width: 100%;
+        //     padding-top: 75%;
+        //     background-color: #B2BAC4;
+        // }
+
+        // .m-image {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        // }
+    }
+}

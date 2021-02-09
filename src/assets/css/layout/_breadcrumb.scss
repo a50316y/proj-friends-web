@@ -1,0 +1,24 @@
+.l {
+  &-breadcrumb {
+    @include flex(flex-start, center);
+
+    height: $breadcrumb-height;
+
+    margin: 0 !important;
+    padding: .4rem .8rem .4rem .8rem;
+
+    background: map-get($map: $colors-map, $key: gray-100);
+
+    border-bottom: 1px solid map-get($map: $colors-map, $key: gray-200);
+
+    font-weight: 300;
+
+    &__nav {
+      @include flex(flex-start, center);
+
+      a {
+        color: map-get($map: $colors-map, $key: primary-500);
+      }
+    }
+  }
+}

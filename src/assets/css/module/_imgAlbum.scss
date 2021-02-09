@@ -1,0 +1,135 @@
+.m {
+    &-mainImg {
+        background-color: #fff;
+        height: 100%;
+        padding: 0.5rem;
+        border-radius: 4px;
+
+        &_container {
+            margin: 0 auto;
+            position: relative;
+            border-radius: 4px;
+            width: 350px;
+            height: 330px;
+
+            &:after {}
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                user-select: none;
+            }
+
+            &_name{
+                position: absolute;
+                left: 5%;
+                bottom:3%;
+                color: #FFF;
+                font-size: 22px;
+            }
+        }
+    }
+
+    &-otherImg {
+        &_container {
+            width: 100%;
+            height: 100px;
+            @include flex;
+            align-items: flex-end;
+        }
+
+        &_imgBox {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 4px;
+            margin-right: 7.7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.add {
+                border: 1px dashed #ccc;
+
+                &:hover {
+                    background-color: #ECECEC;
+                }
+            }
+
+
+            &.isActive {
+                // border: 1px solid orange;
+
+                &:after{
+                    position: absolute;
+                    z-index: 20;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 90px;
+                    height: 90px;
+                    content: '';
+                    border: 2px solid #f48d97;
+                    border-radius: 4px;
+                    background: rgba(255, 255, 255, .5);
+                    border-radius: 4px;                    
+                }
+
+            }
+
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+            }
+
+            .imageIcon {
+                font-size: 25px;
+                color: #A1A1A1;
+            }
+
+            .editRadius {
+                //相片右下角編輯按鈕
+                opacity: 0;
+                z-index: 21;
+                position: absolute;
+                cursor: pointer;
+                bottom: 0.5rem;
+                right: 0.5rem;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid #FFF;
+                @include flex(center);
+                padding-top: 4px;
+
+                .edit {
+                    color: #FFF;
+                }
+            }
+
+            &:hover {
+                .editRadius {
+                    opacity: 1;
+
+                    &:hover {
+                        border: 2px solid #84dcda;
+
+                        .edit {
+                            color: #84dcda;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}

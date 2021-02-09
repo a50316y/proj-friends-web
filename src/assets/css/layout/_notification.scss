@@ -1,0 +1,152 @@
+$inbox-width: 300px;
+$inbox-header-height: 3.25rem;
+$inbox-tab-height: 2.8rem;
+
+aside {
+  &.inbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: $inbox-width;
+    background-color: map-get($map: $colors-map, $key: gray-100);
+    box-shadow: -1px 0 12px 0px map-get($map: $colors-map, $key: gray-300);
+    z-index: 40;
+    transform: translateX($inbox-width + 16px);
+    transition: transform .3s;
+
+    &.is-show {
+      transform: translateX(0px);
+    }
+  }
+
+  .inbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $notification-button;
+    padding: 0 1rem;
+    min-height: $inbox-header-height;
+    border-bottom: 1px solid map-get($map: $colors-map, $key: gray-200);
+    ;
+
+    >p.title {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+    }
+  }
+
+  .inbox-body {
+    &_state{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .tabs>ul {
+      border-bottom: 1px solid map-get($map: $colors-map, $key: gray-300);
+
+      &>li {
+        &>a {
+          min-height: $inbox-tab-height;
+          border-bottom: 2px solid transparent;
+          color: map-get($map: $colors-map, $key: gray-300);
+        }
+
+        &.is-active {
+          >a {
+            color: map-get($map: $colors-map, $key: warning-500);
+            border-bottom: 2px solid map-get($map: $colors-map, $key: warning-500) !important;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 0;
+    }
+  }
+}
+
+.reminders {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 6.05rem - 0.1rem - 4px);
+
+  .reminder {
+    padding: 0.5rem;
+
+    .reminder-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    .reminder-content {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: map-get($map: $colors-map, $key: gray-900);
+      ;
+      cursor: default;
+      padding: 0 6px;
+    }
+
+    .reminder-controls {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 1rem;
+      color: map-get($map: $colors-map, $key: danger-600);
+    }
+  }
+}
+
+.remindersV2 {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 6.05rem - 0.1rem - 4px);
+
+  .reminderV2 {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      //color: #000;
+      background-color: #f0f0f0;
+    }
+
+    .reminder-left {
+      display: flex;
+      justify-content: flex-start;
+
+      .reminder-icon {
+        padding: 0 6px;
+      }
+
+      .reminder-title {
+        font-size: 1rem;
+        font-weight: 500;
+        color: map-get($map: $colors-map, $key: gray-900);
+        //cursor: default;
+        padding: 0 6px;
+      }
+    }
+
+    .reminder-count {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 1rem;
+      color: map-get($map: $colors-map, $key: danger-600);
+    }
+
+  }
+}

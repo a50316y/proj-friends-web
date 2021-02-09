@@ -1,0 +1,72 @@
+.m {
+    &-imgUpload {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &_header {
+            width: 100%;
+            background: #00d4cd;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 15px 20px;
+            line-height: 25px;
+            @include flex(space-between);
+
+            .IconClose {
+                font-size: 25px;
+            }
+        }
+
+        &_main {
+            width: 100%;
+            height: 455px;
+            padding: 1rem;
+            overflow-y: scroll;
+            display: flex;
+            // background-color: #ccc;
+
+            .inputFile { //隱藏原本input file樣式
+
+                input {
+                    display: none;
+                }
+
+            }
+
+            .imgContainer {
+                width: 500px;
+                height: 100%;
+                border: 1px solid #e1e3e5;
+                border-radius: 4px;
+                background-color: #e1e3e5;
+                @include flex(center, center);
+            }
+
+            .imgOption {
+                width: 358px;
+                height: 100%;
+                margin-left: 10px;
+
+                .imgTitle {
+                    width: 100%;
+                    background: #e9f3f5;
+                    padding: 10px 10px 10px 20px;
+                    line-height: 2em;
+                    margin-bottom: 10px;
+                }
+
+                .imgButton {
+                    width: 100%;
+                    .btn{
+                        &:hover {
+                            color: #fff;
+                        }                        
+                    }
+
+                }
+            }
+        }
+    }
+}

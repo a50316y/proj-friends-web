@@ -1,0 +1,197 @@
+$inbox-width: 350px;
+$inbox-header-height: 2.25rem;
+$inbox-tab-height: 2.8rem;
+
+.m {
+
+    &-chat {
+        &_inbox {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 290px;
+            height: 380px;
+            width: $inbox-width;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: -1px 0 12px 0px map-get($map: $colors-map, $key: gray-300);
+            z-index: 35;
+            transition: transform .3s;
+
+            &.is-show {
+                transform: translateX(0px);
+                display: block;
+            }
+
+            &.is-focus {
+                box-shadow: -1px 0 12px 0px map-get($map: $colors-map, $key: primary-300);
+            }
+        }
+
+        &_inbox_header {
+            @include flex(space-between, center);
+            height: 40px;
+            border-radius: 4px;
+            background: #FFF;
+            padding: 0 1rem;
+            min-height: $inbox-header-height;
+            border-bottom: 1px solid map-get($map: $colors-map, $key: gray-200);
+
+
+            &__avatar {
+                @include flex;
+                padding-top: 4px;
+                @extend %imgBlock;
+
+
+                img {
+                    @include size(25px);
+                    border-radius: 50%;
+                }
+
+                >p.title {
+                    color: #444;
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    margin-left: 12px;
+                    user-select: none;
+                }
+
+            }
+
+            >.header-close {
+                font-size: 18px;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                color: #ccc;
+
+                &:hover {
+                    background-color: #ececec;
+                    border-radius: 50%;
+                }
+            }
+
+            &.newMsg {
+                background: $primary;
+                color: #fff !important;
+            }
+
+
+        }
+
+        &_inbox-body {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            display: flex; //用兩層包起來 flex-direction: column-reverse; 才不會overflow
+            flex-direction: column;
+            padding: 0.5rem;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+
+            .flex-d {
+                //用兩層包起來 flex-direction: column-reverse; 才不會overflow
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .msg {
+                display: block;
+                // margin-top: 4px;
+                margin-bottom: 4px;
+                min-height: 36px;
+                position: relative;
+                width: 100%;
+                clear: both;
+                overflow: hidden;
+
+                .msg_avatar {
+                    position: absolute;
+                    bottom: 0;
+                    padding-top: 4px;
+                    margin-right: 5px;
+                    @extend %imgBlock;
+
+
+                    img {
+                        @include size(25px);
+                        border-radius: 50%;
+                    }
+                }
+
+                .msg_read {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding-top: 4px;
+                    margin-right: 5px;
+                    @extend %imgBlock;
+
+
+                    img {
+                        @include size(12px);
+                        border-radius: 50%;
+                    }
+
+                    .unread {
+                        @include size(12px);
+                        color: #ccc;
+                    }
+                }
+
+                p {
+                    min-height: 20px;
+                    max-width: 70%;
+                    padding: 6px;
+                    border-radius: 20px;
+                    word-break: break-all;
+                }
+
+                & .My {
+                    float: right;
+                    background-color: $primary;
+                    color: #FFF;
+                    margin-right: 20px;
+
+                }
+
+                & .You {
+                    float: left;
+                    margin-left: 30px;
+                    background-color: #f0f2f5;
+                }
+            }
+
+        }
+
+        &_inbox-bottom {
+            height: 40px;
+            width: 100%;
+            padding: 4px;
+            border-top: 1px solid #ccc;
+
+            textarea {
+                height: 32px;
+                border: 0;
+                background-color: #f0f2f5;
+                border-radius: 20px;
+
+                &:focus {
+                    background-color: #f0f2f5;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+}

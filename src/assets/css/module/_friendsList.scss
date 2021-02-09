@@ -1,0 +1,60 @@
+.m {
+    &_userFriends {
+        width: 100%;
+        height: 100%;
+
+
+        &_list {
+            .FriendsList::-webkit-scrollbar {
+                display: none;
+            }
+
+            .FriendsList {
+                height: 100%;
+                width: 100%;
+                padding: 5px 0;
+                overflow-y: auto;
+
+
+                .FriendsItem {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 40px;
+                    border-radius: 4px;
+                    padding: 5px;
+                    user-select: none;
+                    // border: 1px solid #e1e3e5;
+                    background-color: #f0f2f5;
+                    margin-bottom: 6px;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &:hover {
+                        background-color: #ccc;
+                    }
+
+                    &__avatar {
+                        padding-top: 4px;
+                        @extend %imgBlock;
+
+
+                        img {
+                            @include size(25px);
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &__intro {
+                        display: flex;
+                        padding-right: 6px;
+                    }
+
+                }
+            }
+        }
+    }
+}

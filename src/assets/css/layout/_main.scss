@@ -1,0 +1,14 @@
+.l {
+  &-main {
+    display: flex;
+    height: $page-height;
+
+    &__page {
+      position: relative;
+      height: $page-height;
+      width: 100%;
+      // min-width: 768px;
+      overflow-y: auto;
+    }
+  }
+}

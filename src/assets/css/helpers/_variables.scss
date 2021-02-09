@@ -1,0 +1,106 @@
+// color
+$white: #fff;
+$black: #000;
+
+$primary: #337ab7;
+$info: #5bc0de;
+$sucess: #5cb85c;
+$warning: #f0ad4e;
+$danger: #d9534f;
+$teal: #20c997;
+$cyan: #17a2b8;
+$gray: #bab1ad;
+$gray-dark: #403734;
+
+$color-variants: (100: -10%,
+  200: -25%,
+  300: -50%,
+  400: -75%,
+  500: 100%,
+  600: 75%,
+  700: 50%,
+  800: 25%,
+  900: 15%);
+
+$colors-map: ("primary": $primary,
+  "info": $info,
+  "sucess": $sucess,
+  "warning": $warning,
+  "danger": $danger,
+  "teal": $teal,
+  "cyan": $cyan,
+  "black": $black,
+  "white": $white,
+  "gray": $gray,
+  "gray-dark": $gray-dark);
+
+//  Add color variants to $colors-map
+@each $color-name,
+$color in $colors-map {
+
+  @each $variant-name,
+  $percent in $color-variants {
+    $mix-color: if($percent < 0%, white, black);
+    $colors-map: map-merge($colors-map,
+        ($color-name+"-"+$variant-name: mix($color, $mix-color, abs($percent))));
+  }
+}
+
+// 下方為 color 轉 OOCSS
+@mixin color-variant($parent1, $parent2, $color) {
+  #{$parent1} {
+    background-color: $color !important;
+  }
+
+  #{$parent2} {
+    color: $color !important;
+  }
+}
+
+@each $color,
+$value in $colors-map {
+  @include color-variant(".#{$color}", ".tx-#{$color}", $value);
+}
+
+// 使用 .tx-primary-(100~900) .primary-(100~900)  map-get($map: $colors-map, $key: primary-(100~900));
+
+// background color
+$bg-color: #fff;
+
+
+// family
+$family-sans-serif: arial,
+"Microsoft JhengHei",
+"微軟正黑體",
+sans-serif !important;
+
+// font-size
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$font-xxl: $base-font-size * 2.25;
+$font-xl: $base-font-size * 1.5;
+$font-l: $base-font-size * 1.25;
+$font-m: $base-font-size;
+$font-s: $base-font-size * 0.75;
+
+// Weights
+$weight-300: 300 !default;
+$weight-400: 400 !default;
+$weight-500: 500 !default;
+$weight-600: 600 !default;
+$weight-700: 700 !default;
+
+// layout variables
+$navbar-height: 3.25rem;
+
+$breadcrumb-height: 2.4rem;
+
+$navigation-width: 60px;
+$navigation-height: calc(100vh - 3.25rem);
+$navigation-item-height: 50px;
+$navigation-bg: map-get($map: $colors-map, $key: primary-500);
+$navigation-active-bg: map-get($map: $colors-map, $key: primary-600);
+
+$page-height: calc(100vh - 3.25rem);
+
+$notification-button: map-get($map: $colors-map, $key: info-400);

@@ -1,0 +1,41 @@
+// helpers
+@import 'helpers/mixin';
+@import 'helpers/transition';
+@import 'helpers/variables';
+@import 'helpers/other';
+
+
+// vendors
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-vue/src/index.scss";
+
+// base
+@import 'base/reset';
+@import 'base/typography';
+
+//overwrite
+
+
+// layout
+@import 'layout/navigation';
+@import 'layout/navbar';
+@import 'layout/breadcrumb';
+@import 'layout/notification';
+@import 'layout/error';
+@import 'layout/main';
+
+// module
+@import 'module/imgCard';
+@import 'module/imgAlbum';
+@import 'module/imgUpload';
+@import 'module/pop';
+@import 'module/chatBox';
+@import 'module/friendsList';
+@import 'module/userCard';
+@import 'module/userCardDetail';
+
+// page
+@import 'pages/login';
+@import 'pages/register';
+@import 'pages/memberCenter';
+@import 'pages/mainIndex';

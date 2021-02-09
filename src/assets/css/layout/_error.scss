@@ -1,0 +1,14 @@
+.l {
+  &-error {
+    @include flex(center, center, column);
+    min-height: $page-height;
+
+    &__title {
+      padding: 24px;
+      font-size: $font-xxl;
+      text-align: center;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+    }
+  }
+}

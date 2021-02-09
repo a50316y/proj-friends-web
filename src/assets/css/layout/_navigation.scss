@@ -1,0 +1,22 @@
+.l {
+  &-navigation {
+    &__group {
+      @include size($navigation-width, 100%);
+      background: $navigation-bg;
+    }
+
+    &__item {
+      @include flex(center, center);
+      @include size(100%, $navigation-item-height);
+      cursor: pointer;
+
+      &:hover {
+        background: $navigation-active-bg;
+      }
+
+      &--active {
+        background: $navigation-active-bg;
+      }
+    }
+  }
+}

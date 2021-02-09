@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  @include scrollbars(.3em, map-get($map: $colors-map, $key: gray-300));
+  font-family: $family-sans-serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background-color: $bg-color;
+  overflow: hidden;
+}

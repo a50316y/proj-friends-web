@@ -1,0 +1,79 @@
+.l {
+  &-navbar {
+    min-width: 768px;
+
+    %imgBlock {
+      @include flex(center, center);
+      cursor: pointer;
+    }
+
+    @include flex(space-between, center);
+
+    padding: 0 1rem;
+    height: $navbar-height;
+    // background-color: #8c8582;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+
+    &__logo {
+      @extend %imgBlock;
+
+      img {
+        @include size(200px, 40px);
+      }
+    }
+
+    &__avatar {
+      @extend %imgBlock;
+
+      img {
+        @include size(40px);
+        border-radius: 50%;
+      }
+
+      // &::after { //右上角閃爍小圓點
+      //   @include position(relative, -15px, 5px);
+      //   @include size(9px);
+
+      //   content: "";
+      //   border-radius: 50px;
+      //   background: map-get($map: $colors-map, $key: warning-400);
+
+      //   animation: shinning 2s infinite;
+      // }
+    }
+
+
+    &__icon {
+      @include flex(center, center);
+      @include size(65px, $navbar-height);
+      @include font(1.2rem, map-get($map: $colors-map, $key: primary-500));
+
+      border-right: 1px solid map-get($map: $colors-map, $key: primary-200);
+      border-left: 1px solid map-get($map: $colors-map, $key: primary-200);
+
+      cursor: pointer;
+
+      &:hover {
+        color: map-get($map: $colors-map, $key: primary-500);
+        background: map-get($map: $colors-map, $key: primary-100);
+      }
+
+      &.isActive {
+        color: map-get($map: $colors-map, $key: primary-500);
+        background: map-get($map: $colors-map, $key: primary-100);
+      }
+    }
+  }
+}
+
+@keyframes shinning {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(2.5, 2.5, 2.5);
+  }
+}
