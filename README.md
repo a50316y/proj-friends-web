@@ -13,6 +13,15 @@
 5.交友申請  
 6.聊天  
 
+
+![作品集](https://user-images.githubusercontent.com/39230029/194108731-5dca00ab-665f-4501-bdef-fa76a8467e19.png)
+![作品集2](https://user-images.githubusercontent.com/39230029/194108993-7bdec7f6-2462-413a-9a65-af5a0348fa71.png)
+![作品集3](https://user-images.githubusercontent.com/39230029/194109090-f07ee210-7bbf-459a-8bd4-2f1e5d98eb51.png)
+![作品集wire-frame](https://user-images.githubusercontent.com/39230029/194109710-fceb8001-2fba-4e10-ac23-40ffcd977e67.png)
+
+
+## Prototype(成果畫面)
+
 <img width="960" alt="未登入首頁" src="https://user-images.githubusercontent.com/39230029/163331364-087c0431-3c01-438f-8094-2f6e77a86021.png">
 <img width="960" alt="註冊畫面" src="https://user-images.githubusercontent.com/39230029/163331439-b19b5223-64da-435a-abc1-07abe79e4982.png">
 <img width="960" alt="登入畫面" src="https://user-images.githubusercontent.com/39230029/163331426-813556ac-4e1e-4697-8834-2eb4450b012e.png">
