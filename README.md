@@ -1,10 +1,16 @@
-# friends 交友平台(前端)
+# MeetFriends website 交友平台
 
-> 一個簡易的交友平台(前端部分)
-> 使用資料庫:mongoDB  
-> 使用其他工具:socket bootstrap vee-validate fontawesome   
-> --->[後端部份程式碼](https://github.com/a50316y/proj-friends-server) 
-> 
+>從零開始開發出一個完整的交友平台，此平台為參考現今多數交友APP/web 以及自行使用後的想法，再整理網路上大多使用者使用後的回饋，規劃出一些對大眾使用者較友善的功能及使用流程， 並無添加其他金流或一些特殊功能，單純期望使用者可以簡單的配對到對象並進行聊天交友，期望能黏著住大部分的使用者
+
+> 開發時間：2020/12 ~ 2021/02 | 作品性質：side project | 擔任角色：PM/RD(發想、設計、程式撰寫)
+
+> 使用工具 :  
+  規劃 UI/UX : Figma / draw.io   
+  前端 : vue.js / socket / bootstrape / vee-validate / fontawesome   
+  後端 : node.js/base64-img/ socket.io/ mongoDB
+
+> --->[後端程式](https://github.com/a50316y/proj-friends-server) 
+
 ## 功能
 1.註冊  
 2.登入  
