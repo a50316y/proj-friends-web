@@ -17,7 +17,10 @@
 3.會員中心  
 4.上傳相片  
 5.交友申請  
-6.即時訊息  
+6.即時訊息
+7.購買會員
+8.系統通知
+
 
 
 ![作品集](https://user-images.githubusercontent.com/39230029/194108731-5dca00ab-665f-4501-bdef-fa76a8467e19.png)
@@ -26,7 +29,7 @@
 ![作品集wire-frame](https://user-images.githubusercontent.com/39230029/194109710-fceb8001-2fba-4e10-ac23-40ffcd977e67.png)
 
 
-## Prototype(成果畫面)
+## mockup(成果畫面)
 
 <img width="960" alt="未登入首頁" src="https://user-images.githubusercontent.com/39230029/163331364-087c0431-3c01-438f-8094-2f6e77a86021.png">
 <img width="960" alt="註冊畫面" src="https://user-images.githubusercontent.com/39230029/163331439-b19b5223-64da-435a-abc1-07abe79e4982.png">
