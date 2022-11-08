@@ -27,7 +27,7 @@
 ![IA資訊架構-v2](https://user-images.githubusercontent.com/39230029/200542239-8985f553-4745-4271-a135-f3f24951c4ce.png)
 
 ![作品集3](https://user-images.githubusercontent.com/39230029/194109090-f07ee210-7bbf-459a-8bd4-2f1e5d98eb51.png)
-![註冊logic-flow](https://user-images.githubusercontent.com/39230029/200562049-7c878ee9-4ab1-4ac7-a0a9-30aedb52c2c9.png)
+![註冊logic-flow](https://user-images.githubusercontent.com/39230029/200563074-a4e0741c-069b-4a09-83d9-1f8ff670d090.png)
 
 
 
