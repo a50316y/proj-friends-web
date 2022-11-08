@@ -31,6 +31,7 @@
 
 
 ## mockup(成果畫面)
+![mockup-v2](https://user-images.githubusercontent.com/39230029/200549032-e353f21a-1f55-47af-b5f9-dd0f389ceb6f.png)
 
 <img width="960" alt="未登入首頁" src="https://user-images.githubusercontent.com/39230029/163331364-087c0431-3c01-438f-8094-2f6e77a86021.png">
 <img width="960" alt="註冊畫面" src="https://user-images.githubusercontent.com/39230029/163331439-b19b5223-64da-435a-abc1-07abe79e4982.png">
