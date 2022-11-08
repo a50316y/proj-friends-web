@@ -25,9 +25,6 @@
 ![User Story-v2](https://user-images.githubusercontent.com/39230029/200542222-f46e1b04-ad99-4683-9123-9e05244e8ee6.png)
 ![IA資訊架構-v2](https://user-images.githubusercontent.com/39230029/200542239-8985f553-4745-4271-a135-f3f24951c4ce.png)
 
-
-![作品集](https://user-images.githubusercontent.com/39230029/194108731-5dca00ab-665f-4501-bdef-fa76a8467e19.png)
-![作品集2](https://user-images.githubusercontent.com/39230029/194108993-7bdec7f6-2462-413a-9a65-af5a0348fa71.png)
 ![作品集3](https://user-images.githubusercontent.com/39230029/194109090-f07ee210-7bbf-459a-8bd4-2f1e5d98eb51.png)
 ![作品集wire-frame](https://user-images.githubusercontent.com/39230029/194109710-fceb8001-2fba-4e10-ac23-40ffcd977e67.png)
 
