@@ -21,7 +21,8 @@
 7.購買會員  
 8.系統通知  
 
-![主頁-v2](https://user-images.githubusercontent.com/39230029/200542845-57d5aa03-417d-4325-8e89-14c607bb7d70.png)
+
+![封面](https://user-images.githubusercontent.com/39230029/200563611-fb3cbc8f-fe15-46ea-a23f-328da1ef63e4.png)
 
 ![User Story-v2](https://user-images.githubusercontent.com/39230029/200542222-f46e1b04-ad99-4683-9123-9e05244e8ee6.png)
 ![IA資訊架構-v2](https://user-images.githubusercontent.com/39230029/200542239-8985f553-4745-4271-a135-f3f24951c4ce.png)
